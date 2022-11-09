@@ -2,7 +2,8 @@ package fr.efrei.main;
 
 public class Rpn {
 	
-	public int same(int element) {
-		return element;
+	public int[] parse(String element) {
+		
+		return new int[] {Integer.parseInt(element)};
 	}
 }

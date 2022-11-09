@@ -1,6 +1,6 @@
 package fr.efrei.test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,10 +8,10 @@ import fr.efrei.main.Rpn;
 
 public class RpnTest {
 	@Test
-	void one_element_return_element() {
+	void parse_should_return_array_element() {
 		
 		Rpn rpn = new Rpn();
 		
-		assertEquals(1, rpn.same(1));
+		assertArrayEquals(new int[]{1}, rpn.parse("1"));
 	}
 }
