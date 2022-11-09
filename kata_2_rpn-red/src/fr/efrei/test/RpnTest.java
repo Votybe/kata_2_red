@@ -14,4 +14,11 @@ public class RpnTest {
 		
 		assertArrayEquals(new int[]{1}, rpn.parse("1"));
 	}
+	
+	@Test
+	void parse_should_return_array_element_2() {
+		Rpn rpn = new Rpn();
+		
+		assertArrayEquals(new int[] {1, 1}, rpn.parse("1 1"));
+	}
 }
